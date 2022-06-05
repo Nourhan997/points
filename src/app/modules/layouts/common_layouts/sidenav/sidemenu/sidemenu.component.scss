@@ -1,0 +1,76 @@
+.sidepage {
+  ng-sidenav-content {
+    overflow: hidden;
+  }
+  ng-sidenav-container {
+    top: 50px !important;
+    background-color: #e9f3ff;
+  }
+  .toolbar {
+    height: 60px;
+    color: #5bc5c9;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .Card {
+    left: 15%;
+    right: 4%;
+    top: 3%;
+    bottom: 1.46%;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    min-height: 600px;
+    .Title {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      color: #2c2483;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0px;
+    margin-left: -38px;
+    li {
+      color: #696969;
+      border-bottom: 1px solid #dadada;
+      padding: 20px;
+      text-align: left;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #696969;
+        &:hover {
+          color: #5bc5c9;
+        }
+      }
+    }
+  }
+  .tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 13%;
+    align-items: center;
+    .iconbar {
+      color: #5bc5c9;
+      cursor: pointer;
+    }
+  }
+  .w-100 {
+    width: 100%;
+  }
+  .w-70 {
+    width: 70%;
+  }
+}

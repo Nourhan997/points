@@ -1,0 +1,43 @@
+<div class="sidepage">
+  <mat-toolbar class="toolbar">
+    <div class="tool">
+      <div class="logo"><span>Logo</span></div>
+      <div class="iconbar" (click)="toggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </div>
+    </div>
+  </mat-toolbar>
+  <ng-sidenav-container>
+    <ng-sidenav [expanded]="isExpanded" [drawerState]="state" [drawerWidth]="'250px'" [drawerWidthCollapsed]="'0px'"
+      [color]="'#ffffff'">
+      <ul *ngIf="isExpanded">
+        <li>
+          <a [routerLink]="['/Dashboard']">Dashboard</a>
+        </li>
+        <li>
+          <a [routerLink]="['/Customers']">Customers</a>
+        </li>
+        <li>Users</li>
+        <li>Activities</li>
+        <li>Rewards</li>
+        <li>Tiers</li>
+        <li>Cashing Points</li>
+        <li>Notifications</li>
+        <li>Subscription</li>
+        <li>Company Profile</li>
+        <li>Profile</li>
+        <li>Color Theme</li>
+        <li>Logout</li>
+      </ul>
+    </ng-sidenav>
+    <ng-sidenav-content [ngClass]="isExpanded ? 'w-70' : 'w-100'">
+      <div class="Card">
+        <span class="Title">
+          {{ title }}
+        </span>
+        <mat-divider></mat-divider>
+        <router-outlet></router-outlet>
+      </div>
+    </ng-sidenav-content>
+  </ng-sidenav-container>
+</div>
